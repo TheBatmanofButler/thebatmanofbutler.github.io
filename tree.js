@@ -92,7 +92,7 @@ let generateBinaryTree = function() {
     y,
     length,
     strokeWidth,
-    -getRandomNumberInRange(-60, 0)
+    getRandomNumberInRange(-60, 0)
   );
 };
 

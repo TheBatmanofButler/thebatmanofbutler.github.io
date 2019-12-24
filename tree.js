@@ -36,19 +36,21 @@ let generateBinaryTreeHelper = function(x1, y1, length, strokeWidth, deg) {
     .style("stroke-width", strokeWidth);
 
   if (length > 0 && strokeWidth > 1) {
+    let degDelta = getRandomNumberInRange(0, 30);
+
     generateBinaryTreeHelper(
       x2,
       y2,
       length - 3,
       strokeWidth - 0.4,
-      deg - getRandomNumberInRange(0, 30)
+      deg - degDelta
     );
     generateBinaryTreeHelper(
       x2,
       y2,
       length - 3,
       strokeWidth - 0.4,
-      deg + getRandomNumberInRange(0, 30)
+      deg + degDelta
     );
   } else {
     g.append("circle")
@@ -63,8 +65,8 @@ let generateBinaryTree = function() {
   let x = WIDTH / 2;
   let y = HEIGHT * (3 / 4);
   let length = 50;
-  let strokeWidth = 4;
-  let deg = 30;
+  let strokeWidth = 4.5;
+  let deg = getRandomNumberInRange(0, 30);
 
   if (g) {
     g.remove();
@@ -80,20 +82,8 @@ let generateBinaryTree = function() {
     .style("stroke", "gray")
     .style("stroke-width", 5);
 
-  generateBinaryTreeHelper(
-    x,
-    y,
-    length,
-    strokeWidth,
-    getRandomNumberInRange(0, 30)
-  );
-  generateBinaryTreeHelper(
-    x,
-    y,
-    length,
-    strokeWidth,
-    getRandomNumberInRange(-60, 0)
-  );
+  generateBinaryTreeHelper(x, y, length, strokeWidth, deg);
+  generateBinaryTreeHelper(x, y, length, strokeWidth, -deg);
 };
 
 generateBinaryTree();

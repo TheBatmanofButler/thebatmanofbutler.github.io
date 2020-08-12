@@ -10,6 +10,8 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -99,7 +101,7 @@
     \resumeSubheadingExtra
       {Columbia University}{New York, NY}
       {Bachelor of Arts in Computer Science;  GPA: 3.22}{Sept. 2014 -- Feb. 2018}
-      {\textbf{Relevant Coursework}: Data Structures in Java, Advanced Programming, Programming Languages and Translators, Introduction to Databases, Artificial Intelligence, Computer Applications in Health Care \& Biomedicine}
+      {\textbf{Relevant Coursework}: Advanced Programming, Artificial Intelligence, Data Structures, Introduction to Databases}
     \resumeListEnd
 
 %-----------EXPERIENCE-----------------
@@ -110,11 +112,11 @@
       {LiveStories (Series A Startup, focused on civic data storytelling)}{Seattle, WA}
       {Software Engineer}{Sep. 2019 - Present}
       \resumeItemListStart
+        \resumeItemNoTitle {Designed and implemented \textbf{REST} APIs in \textbf{Python} and \textbf{Node} to persist chart and app data in \textbf{PostgreSQL}}
         \resumeItemNoTitle {Developed new donut and bar chart components for a \textbf{React}, \textbf{d3.js}, and \textbf{TypeScript} component library}
         \resumeItemNoTitle {Implemented data transformation layers to ingest generic API data and return chart-specific data models}
-        \resumeItemNoTitle {Improved charting UX by building custom data visualization controls (data grouping, bar axes, error bars, tooltips, legends, colors)}
-        \resumeItemNoTitle {Introduced caching in a dynamically-populated menu and reduced page loads by 50\%}
-        \resumeItemNoTitle {Supported team through project onboarding and d3.js introductions/walkthroughs}
+        \resumeItemNoTitle {Improved charting UX by building custom data visualization controls (data grouping, bar axes, error bars, etc.)}
+        \resumeItemNoTitle {Supported team through new product design, project onboarding, and d3.js introductions/walkthroughs}
       \resumeListEnd
 
     \resumeSubheading
@@ -157,7 +159,7 @@
       \resumeItemListStart
         \resumeItemNoTitle {Inducted into \href{https://hackny.org/}{\textit{HackNY}}, a competitive NYC-based technology startup fellowship}
         \resumeItemNoTitle {Built a \textbf{Python} web app for the Citi Bike dispatcher team to monitor bike levels at stations across NYC}
-        \resumeItemNoTitle {Developed \href{https://www.npmjs.com/package/gbfs2geojson-js}{\textit{gbfs2geojson-js}}, an open-source \textbf{npm} package that facilitates bike-share feed integration for approximately 50 cities worldwide}
+        \resumeItemNoTitle {Developed an open-source \textbf{npm} package that facilitates bike-share feed integration for $\sim$ 50 cities worldwide}
       \resumeListEnd
 
   \resumeListEnd
@@ -166,20 +168,24 @@
 %-----------PROJECTS-----------------
 \section{Projects \textit{(for more information, visit \href{https://github.com/TheBatmanofButler}{https://github.com/TheBatmanofButler})}}
   \resumeSubHeadingListStart
-    \resumeSubItem{The Perfect Number}
-      {Visual data story on federal corporate income taxes (viewed $>$1000 times in 24 hours)}
-    \resumeSubItem{PolitiColor}
-      {Twitter sentiment analyzer and visualization for 2016 U.S. primaries (Top 30 Hacks at PennApps XIII)}
+    \resumeItemNoTitle {\textbf{Strudel}: Platform for developers to quickly build real-time collaboration apps}
+    \resumeItemListStart
+      \resumeItemNoTitle {\textit{Contributions}: RESTful API in \textbf{Golang}, database in \textbf{PostgreSQL}, CRDT real-time collaboration server using \textbf{yjs} and \textbf{Node}, UI using \textbf{React} and \textbf{Material Design}, deployment using \textbf{Docker} containers on \textbf{AWS EC2}}
+    \end{itemize}
+    \resumeItemNoTitle {\textbf{The Perfect Number}: Visual data story on federal corporate income taxes (viewed $>$1000 times in 24 hours)}
+    \resumeItemListStart
+      \resumeItemNoTitle {\textit{Contributions}: Data visualization using \textbf{d3.js} and \textbf{HTML Canvas}, exploratory data analysis using \textbf{pandas}}
+    \end{itemize}
   \resumeListEnd
 
 
-% --------PROGRAMMING SKILLS------------
-\section{Programming Skills}
+% --------TECHNICAL SKILLS------------
+\section{Technical Skills}
   \resumeSubHeadingListStart
     \resumeSubItem{Proficient}
-      {JavaScript (React, TypeScript, d3.js), Python (Flask, numpy, pandas, matplotlib)}
+      {JavaScript (React, TypeScript, d3.js), Python (Flask, numpy, pandas, matplotlib), Golang}
     \resumeSubItem{Familiar}
-      {C, Java, Golang, MongoDB, Angular.js, Node.js, AWS (DynamoDB, S3, Lambda, EC2, EBS, Serverless), Google Cloud, DigitalOcean, Mapbox, Gunicorn, NGINX, Linux, Tensorflow, scikit-learn, CircleCI}
+      {Docker, Material Design, MongoDB, Node.js, AWS (EC2, DynamoDB, S3), Linux, C, Java, Angular.js, CircleCI, Mapbox, Gunicorn, NGINX, yjs}
  \resumeListEnd
 
 

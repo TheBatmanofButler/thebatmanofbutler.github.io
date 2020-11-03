@@ -32,10 +32,14 @@ a {
 
 .post-title {
   text-align: center;
-  /* align-items: center; */
-  /* margin: auto; */
+}
+
+.post-content-container {
+  display: flex;
+  justify-content: center;
 }
 
 .post-content {
   padding: 10px;
+  width: 60%;
 }

@@ -1,12 +1,41 @@
 html {
-  background: #dff7d9;
+  background: #353a47;
 }
 
 body {
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
+  color: #f9f9f9;
 }
 
 a {
   font-weight: bold;
-  color: #335145;
+  color: #b0e298;
+}
+
+.tree-container {
+  width: 60vw;
+  margin: auto;
+}
+
+.navigation-container {
+  display: flex;
+}
+
+.navigation-child {
+  padding: 20px;
+}
+
+.post-title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.post-title {
+  text-align: center;
+  /* align-items: center; */
+  /* margin: auto; */
+}
+
+.post-content {
+  padding: 10px;
 }

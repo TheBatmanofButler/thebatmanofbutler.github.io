@@ -1,102 +1,76 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-  <!--<![endif]-->
+<html>
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Ganesh Ravichandran</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css"
-    />
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-    ></script>
+
+    <!-- d3 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.14.2/d3.min.js"></script>
+
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Custom stylesheet -->
     <link rel="stylesheet" href="main.css" />
   </head>
+
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
-    <section class="section">
-      <div class="container">
-
-        <div class="container">
-          <div class="columns is-centered">
-            <div class="column is-half">
-              <figure class="image is-1">
-                <svg id="tree"></svg>
-              </figure>
-            </div>
+    <section>
+      <div class="navigation-container">
+        <div class="navigation-child">
+          <div>Home</div>
+        </div>
+        <div class="navigation-child">
+          <div>
+            <a href="/writing.html">Writing</a>
           </div>
-
-        <h1 class="title is-size-1">
-          Hello, I'm Ganesh Ravichandran, an engineer living in Seattle.
-        </h1>
-
-        <p class="subtitle is-size-3">
-          I'm currently a software engineer at
-          <a href="https://www.livestories.com/" target="_blank">LiveStories</a
-          >, building data-powered UIs for one of the world's largest civic data
-          libraries. We are focused on helping governments and businesses
-          understand how their communities are changing.
-        </p>
-        <p class="subtitle is-size-3">
-          Previously, I co-founded my own data visualization consultancy, built
-          UIs for a
-          <a href="https://www.twobulls.com/case-study-vdk.html" target="_blank"
-            >digital citizen engagement kiosk</a
-          >, and developed logistics software for
-          <a href="https://www.motivateco.com/" target="_blank">Citi Bike</a>.
-        </p>
-        <p class="subtitle is-size-3">
-          I am interested in clean design, distributed systems, and artificial intelligence. I learn best when I am building things, and I
-          build a
-          <a href="https://github.com/TheBatmanofButler/" target="_blank"
-            >lot of things</a
-          >. 
-          <!-- Sometimes I
-          <a href="https://medium.com/@the.ganesh.ravichandran" target="_blank"
-            >write</a
-          >. -->
-        </p>
-        <p class="subtitle is-size-3">
-          For any other information, check out my
-          <a
-            href="https://www.linkedin.com/in/ganesh-ravichandran-370793a1/"
-            target="_blank"
-            >LinkedIn</a
-          >
-          or <a href="/resume.pdf">resume</a>.
-        </p>
-
-        <h5 class="is-size-5">
-          *Inspired by
-          <a href="https://www.animateddata.com/lab/d3-tree/" target="_blank">
-            Peter Cook</a
-          >, I made my own implementation of this tree in d3. It is randomly
-          generated on load. <a onclick="generateBinaryTree()">Click here</a> to
-          regenerate.
-        </h5>
+        </div>
       </div>
     </section>
-    <script src="responsify.js"></script>
+
+    <hr />
+
+    <section>
+      <h1 class="title">Hello, I'm Ganesh Ravichandran.</h1>
+
+      <p>
+        I'm currently a software engineer at
+        <a href="https://www.livestories.com/" target="_blank">LiveStories</a>,
+        building data-powered UIs for one of the world's largest civic data
+        libraries.
+      </p>
+      <p>
+        Previously, I co-founded my own data visualization consultancy, built
+        UIs for a
+        <a href="https://www.twobulls.com/case-study-vdk.html" target="_blank"
+          >digital citizen engagement kiosk</a
+        >, and developed logistics software for
+        <a href="https://www.motivateco.com/" target="_blank">Citi Bike</a>. I
+        am interested in distributed systems, space exploration, and climate
+        change mitigation. I like to <a href="/writing.html">write</a> about
+        this stuff, amongst other things. And I learn best when I am
+        <a href="https://github.com/TheBatmanofButler/" target="_blank"
+          >building new creations</a
+        >.
+      </p>
+
+      <p>
+        For any other information, check out my
+        <a
+          href="https://www.linkedin.com/in/ganesh-ravichandran-370793a1/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        or <a href="/resume.pdf">resume</a>.
+      </p>
+    </section>
+
+    <div class="tree-container">
+      <svg id="tree"></svg>
+    </div>
+
     <script src="tree.js"></script>
   </body>
 </html>

@@ -1,3 +1,5 @@
+/* Copyright 2013 Peter Cook (@prcweb); Licensed MIT */
+
 const WIDTH = 1000;
 const HEIGHT = 500;
 let g;
@@ -8,15 +10,15 @@ let svg = d3
   .attr("preserveAspectRatio", "xMidYMid meet");
 // .call(responsify);
 
-let getRandomNumberInRange = function(min, max) {
+let getRandomNumberInRange = function (min, max) {
   return Math.random() * (max - min) + min;
 };
 
-let degToRad = function(deg) {
+let degToRad = function (deg) {
   return (deg * Math.PI) / 180;
 };
 
-let getCoords = function(x1, y1, length, deg) {
+let getCoords = function (x1, y1, length, deg) {
   let rad = degToRad(deg);
   let x2 = x1 + Math.sin(rad) * length;
   let y2 = y1 - Math.cos(rad) * length;
@@ -24,7 +26,7 @@ let getCoords = function(x1, y1, length, deg) {
   return { x2, y2 };
 };
 
-let generateBinaryTreeHelper = function(x1, y1, length, strokeWidth, deg) {
+let generateBinaryTreeHelper = function (x1, y1, length, strokeWidth, deg) {
   let { x2, y2 } = getCoords(x1, y1, length, deg);
 
   g.append("line")
@@ -61,7 +63,7 @@ let generateBinaryTreeHelper = function(x1, y1, length, strokeWidth, deg) {
   }
 };
 
-let generateBinaryTree = function() {
+let generateBinaryTree = function () {
   let x = WIDTH / 2;
   let y = HEIGHT * (3 / 4);
   let length = 50;

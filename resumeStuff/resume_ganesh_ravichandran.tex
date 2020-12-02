@@ -23,7 +23,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-.6in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -45,6 +45,7 @@
   }
 }
 
+\newcommand{\resumeItemNoTitleTopPadding}[1]{\vspace{0.5pt} \item\small #1 \vspace{-2pt}}
 \newcommand{\resumeItemNoTitle}[1]{\item\small #1 \vspace{-2pt}}
 
 \newcommand{\resumeSubheadingExtra}[5]{
@@ -79,7 +80,7 @@
 \renewcommand{\labelitemiii}{-}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeListEnd}{\end{itemize}}
 
 %-------------------------------------------
@@ -110,37 +111,49 @@
 
     \resumeSubheading
       {LiveStories (Series A Startup, focused on civic data storytelling)}{Seattle, WA}
-      {Software Engineer}{Sep. 2019 - Present}
+      {Software Engineer (Technical Lead on \textup{LiveData})}{Sep. 2019 - Present}
       \resumeItemListStart
-        \resumeItemNoTitle {Designed and implemented \textbf{REST} APIs in \textbf{Python} and \textbf{Node} to persist chart and app data in \textbf{PostgreSQL}}
-        \resumeItemNoTitle {Developed new donut and bar chart components for a \textbf{React}, \textbf{d3.js}, and \textbf{TypeScript} component library}
-        \resumeItemNoTitle {Implemented data transformation layers to ingest generic API data and return chart-specific data models}
-        \resumeItemNoTitle {Improved charting UX by building custom data visualization controls (data grouping, bar axes, error bars, etc.)}
-        \resumeItemNoTitle {Supported team through new product design, project onboarding, and d3.js introductions/walkthroughs}
+        \resumeItemNoTitle {\textit{LiveData} (Latest version of flagship product, an  online data explorer and chart builder for proprietary civic data)}
+        \resumeItemListStart
+          \resumeItemNoTitle {\textbf{Managed three engineers} across three continents to develop and launch an MVP to replace existing app}
+          \resumeItemNoTitle{\textbf{Advised CEO} on design/development strategy and \textbf{cut sprint planning meeting lengths in half}}
+          \resumeItemNoTitle {Developed \textbf{4/7 of the MVP's critical features}, including authentication, location-based search, and chart editing} \resumeItemNoTitle {Re-architected the search function for the data library and \textbf{reduced load time by 40\%}}
+          \resumeItemNoTitle {Facilitated transition for existing users by integrating LiveData into the current product UX}
+        \end{itemize}
+        \resumeItemNoTitleTopPadding {\textit{Forward} (Platform for local governments to provide COVID-19 economic relief to small businesses)}
+        \resumeItemListStart
+          \resumeItemNoTitle {Developed an email campaign launch platform in React for government clients to reach businesses based on their eligibility for a given aid program, \textbf{used by more than half of our clients}}
+          \resumeItemNoTitle {Built tabular UIs for governments to analyze aid eligibility and application status for \textbf{over 10,000 businesses}} \resumeItemNoTitle {Developed and maintained UIs to empower struggling businesses to apply to \textbf{more than 130 municipal and federal aid programs} and gain access to \textbf{over \$600,000 in available pandemic relief}}
+        \end{itemize}
+        \resumeItemNoTitleTopPadding {\textit{APEX} (Older version of flagship product)}
+        \resumeItemListStart
+          \resumeItemNoTitle {Developed new TypeScript and d3.js chart components that \textbf{increased company chart offerings by 25\%}}
+          \resumeItemNoTitle {Designed and implemented REST APIs in Python and Node to persist chart and app data in PostgreSQL}
+        \end{itemize}
       \resumeListEnd
+      
 
     \resumeSubheading
       {Pedal Technologies, Inc. (Data Visualization Consultancy)}{New York, NY}
       {Technical Co-founder}{Aug. 2017 - Aug. 2019}
     \resumeItemListStart
       \resumeItemNoTitle {Oversaw client acquisition, contract oversight, project management, and technical development}
-      \resumeItemNoTitle {\textit{Barnard History Data Portal} for Barnard College}
+      \resumeItemNoTitleTopPadding {\textit{Barnard History Data Portal} for Barnard College}
         \resumeItemListStart
-          \resumeItemNoTitle {Developed a mobile-optimized \textbf{Flask} site to showcase research on the institutional history of Barnard College}
-          \resumeItemNoTitle {Built UIs, API endpoints, and a \textbf{MongoDB} database for individual/batch record upload, editing, search, duplicate record detection, and \textbf{d3.js} data visualization}
-          \resumeItemNoTitle {Configured and maintained \textbf{Gunicorn} and \textbf{NGINX} servers on an \textbf{Ubuntu} VPS}
+          \resumeItemNoTitle {Developed a mobile-optimized Flask app that \textbf{enabled students to crowdsource data} at Barnard College}
+          \resumeItemNoTitle {Built UIs, API endpoints, and a MongoDB database to support robust features including \textbf{individual/batch data upload, editing, search, duplicate detection}, and d3.js \textbf{data visualization}}
+          \resumeItemNoTitle {Configured and maintained an Ubuntu VPS to run a Gunicorn HTTP server and NGINX reverse proxy}
         \end{itemize}
-      \resumeItemNoTitle {\textit{MapMaker} for Eurasianet (independent news organization)}
+      \resumeItemNoTitleTopPadding {\textit{MapMaker} for Eurasianet (independent news organization)}
         \resumeItemListStart
-          \resumeItemNoTitle {Built a cross-platform \textbf{Python} app for producing custom, publication-quality maps}
-          \resumeItemNoTitle {Developed a map-generation engine to fetch geocoded data and compile multiple map layers with \textbf{matplotlib} }
-          % \resumeItemNoTitle {Wrote Python scripts to pre-render map templates and reduce map-generation time by more than 50\%}
-          \resumeItemNoTitle {Implemented a custom greedy algorithm to solve the Point-Feature Label Problem}
+          \resumeItemNoTitle {Built a cross-platform Python app that \textbf{enabled journalists to produce publication-quality maps} of Eurasia}}
+          \resumeItemNoTitle {Developed a map-generation engine to fetch geocoded data and compile multiple map layers with matplotlib }
+          \resumeItemNoTitle {Used custom Python scripts to pre-render map templates and \textbf{cut map-generation time in half}}
         \end{itemize}
-      \resumeItemNoTitle {Data visualization for One For The World (community-driven non-profit)}
+      \resumeItemNoTitleTopPadding {Data visualization for One For The World (community-driven non-profit)}
         \resumeItemListStart
-          \resumeItemNoTitle {Developed an interactive data visualization in \textbf{d3.js} to help with donor recruitment and public relations}
-          \resumeItemNoTitle {Built a \textbf{Flask} data portal to visualize personalized donation data for almost 400 donors and 19 charities}
+          \resumeItemNoTitle {Built a Flask data portal to visualize personalized donation data for \textbf{19 charities and hundreds of donors}}
+          \resumeItemNoTitle {Developed an interactive data visualization in d3.js that facilitated donor recruitment and public relations}
         \resumeListEnd
     \resumeListEnd
 
@@ -148,18 +161,8 @@
       {Two Bulls LLC (Digital Product Consultancy)}{Brooklyn, NY}
       {Software Engineering Intern}{Summer 2017}
       \resumeItemListStart
-        \resumeItemNoTitle {Developed UIs with \textbf{Angular.js} for the Verizon Digital Kiosk, an interactive citizen engagement kiosk}
-        \resumeItemNoTitle {Developed an onsite maintenance GUI with a \textbf{Golang} web server for accessing OS environmental variables}
-        \resumeItemNoTitle {Integrated \textbf{DynamoDB} and \textbf{Serverless} backend endpoints with CMS frontend}
-      \resumeListEnd
-
-    \resumeSubheading
-      {Citi Bike, subsidiary of Motivate}{Brooklyn, NY}
-      {Software Engineering Intern}{Summer 2016}
-      \resumeItemListStart
-        \resumeItemNoTitle {Inducted into \href{https://hackny.org/}{\textit{HackNY}}, a competitive NYC-based technology startup fellowship}
-        \resumeItemNoTitle {Built a \textbf{Python} web app for the Citi Bike dispatcher team to monitor bike levels at stations across NYC}
-        \resumeItemNoTitle {Developed an open-source \textbf{npm} package that facilitates bike-share feed integration for $\sim$50 cities worldwide}
+        \resumeItemNoTitle {Developed Angular.js UIs that \textbf{enabled admin users to update content} on a Verizon citizen engagement kiosk}
+        \resumeItemNoTitle {Built a full-stack app with jQuery and Golang that \textbf{facilitated Android OS troubleshooting} for kiosk technicians}
       \resumeListEnd
 
   \resumeListEnd
@@ -168,13 +171,9 @@
 %-----------PROJECTS-----------------
 \section{Projects \textit{(for more information, visit \href{https://github.com/TheBatmanofButler}{https://github.com/TheBatmanofButler})}}
   \resumeSubHeadingListStart
-    \resumeItemNoTitle {\textbf{Strudel}: Platform for developers to quickly build real-time collaboration apps}
+    \resumeItemNoTitle {\textbf{Strudel}: App platform, developer API, and npm component library for building real-time collaboration apps}
     \resumeItemListStart
-      \resumeItemNoTitle {\textit{Contributions}: RESTful API in \textbf{Golang}, database in \textbf{PostgreSQL}, CRDT real-time collaboration server using \textbf{yjs} and \textbf{Node}, UI using \textbf{React} and \textbf{Material Design}, deployment using \textbf{Docker} containers on \textbf{AWS EC2}}
-    \end{itemize}
-    \resumeItemNoTitle {\textbf{The Perfect Number}: Visual data story on federal corporate income taxes (viewed $>$1000 times in 24 hours)}
-    \resumeItemListStart
-      \resumeItemNoTitle {\textit{Contributions}: Data visualization using \textbf{d3.js} and \textbf{HTML Canvas}, exploratory data analysis using \textbf{pandas}}
+      \resumeItemNoTitle {\textit{Contributions}: RESTful API in Golang, database in PostgreSQL, CRDT real-time collaboration server using yjs and Node, UI using React and Material Design, deployment in Docker containers on a DigitalOcean Ubuntu VPS}
     \end{itemize}
   \resumeListEnd
 
@@ -183,9 +182,9 @@
 \section{Technical Skills}
   \resumeSubHeadingListStart
     \resumeSubItem{Proficient}
-      {JavaScript (React, TypeScript, d3.js), Python (Flask, numpy, pandas, matplotlib), Golang}
+      {JavaScript (React, TypeScript, d3.js), Python (Flask, numpy), Golang}
     \resumeSubItem{Familiar}
-      {Docker, Material Design, MongoDB, Node.js, AWS (EC2, DynamoDB, S3), Linux, C, Java, Angular.js, CircleCI, Mapbox, Gunicorn, NGINX, yjs}
+      {Docker, Redux, SQL, Material Design, MongoDB, Node.js, DigitalOcean, AWS (EC2, DynamoDB, S3, ECS), Linux, C, Java, Angular.js, CI/CD, Mapbox, Gunicorn, NGINX, yjs}
  \resumeListEnd
 
 

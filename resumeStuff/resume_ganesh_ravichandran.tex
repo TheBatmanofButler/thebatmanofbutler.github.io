@@ -91,27 +91,51 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Ganesh Ravichandran} & Email : \href{mailto:ganesh.ravichandran@columbia.edu}{ganesh.ravichandran@columbia.edu}\\
-  \href{https://thebatmanofbutler.github.io}{https://thebatmanofbutler.github.io} & Mobile : 516-382-2920 \\
+  \textbf{\Large Ganesh Ravichandran} & \textit{Authorized to work in the US for any employer}\\
+  \href{https://thebatmanofbutler.github.io}{https://thebatmanofbutler.github.io} & Email : \href{mailto:the.ganesh.ravichandran@gmail.com}{the.ganesh.ravichandran@gmail.com}\\
+   & Mobile : 516-382-2920 \\
 \end{tabular*}
 
-
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheadingExtra
-      {Columbia University}{New York, NY}
-      {Bachelor of Arts in Computer Science;  GPA: 3.22}{Sept. 2014 -- Feb. 2018}
-      {\textbf{Relevant Coursework}: Advanced Programming, Artificial Intelligence, Data Structures, Introduction to Databases}
-    \resumeListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
 
+
+    \resumeSubheading
+      {SOOT (Seed Startup, AI copilot for visual media)}{New York, NY}
+      {Senior Software Engineer}{Feb. 2021 - Oct. 2024}
+      \resumeItemListStart
+        \resumeItemNoTitle {\textit{Developed critical upload and security infrastructure}}
+        \resumeItemListStart
+          \resumeItemNoTitle {Built foundational upload pipeline leveraging CLIP for embedding generation, UMAP for dimensionality reduction, and FAISS for similarity search. Powered \textbf{100\% of user content integration} into the platform.}
+          \resumeItemNoTitle {Architected Lambda@Edge-based secure file-serving infrastructure that was integrated with S3 and API authorization, \textbf{significantly improving user file security}.}
+          \resumeItemNoTitle {Implemented and maintained Firebase Authentication across the stack, integrating Google SSO, password recovery, and secure API authorization.}
+          \resumeItemNoTitle {Extended GraphQL API functionality to support comprehensive queries, enabling users to download entire spaces or account data seamlessly. This was \textbf{requested by 60\% of users}.}
+        \end{itemize}
+        \resumeItemNoTitleTopPadding {\textit{Identified and optimized infrastructure bottlenecks}}
+        \resumeItemListStart
+          \resumeItemNoTitle {Designed a custom horizontal autoscaler that adjusted Kubernetes worker pods based on SQS message queue size, enabling a \textbf{2x increase in user upload capacity}.}
+          \resumeItemNoTitle {Implemented OpenTelemetry across all backend services and enabled distributed tracing via Zipkin, \textbf{reducing p0 incident response time by 30\%} on average.}
+          \resumeItemNoTitle {Managed compute resources using Terraform to support product deployments and rollbacks. Automated deployment process across the stack, \textbf{decreasing deployment time by 20\%}.}
+        \end{itemize}
+        \resumeItemNoTitleTopPadding {\textit{Enhanced user experience and product growth}}
+        \resumeItemListStart
+          \resumeItemNoTitle {Built an Electron app that synced local files, driving a \textbf{70\% increase in file uploads} among beta testers.}
+          \resumeItemNoTitle {Led development on \textit{Playgrounds}, fast-loading static snapshots of user spaces that accounted for \textbf{90\% of DAUs}.}
+          \resumeItemNoTitle {Delivered an intuitive VueJS upload manager for streamlined file queuing and monitoring, improving user satisfaction and upload reliability}
+        \end{itemize}
+        \resumeItemNoTitleTopPadding {\textit{Defined company culture as founding engineer}}
+        \resumeItemListStart
+          \resumeItemNoTitle {Advocated for a shift from research-focused work to a data-driven GTM product strategy, \textbf{enabling a beta launch in 5 weeks}.}
+          \resumeItemNoTitle {Mentored new grad across the entire stack, \textbf{freeing up 70\% of the manager's time} for other priorities.}
+          \resumeItemNoTitle {Instituted a two-week feature freeze to clear tech debt as triage engineer, \textbf{cutting p0 issues by 40\%} for months.}
+        \end{itemize}
+      \resumeListEnd  
+
     \resumeSubheading
       {LiveStories (Series A Startup, focused on civic data storytelling)}{Seattle, WA}
-      {Software Engineer (Technical Lead on \textup{LiveData})}{Sep. 2019 - Present}
+      {Software Engineer (Technical Lead on \textup{LiveData})}{Sep. 2019 - Feb. 2021}
       \resumeItemListStart
         \resumeItemNoTitle {\textit{LiveData} (Latest version of flagship product, an  online data explorer and chart builder for proprietary civic data)}
         \resumeItemListStart
@@ -125,66 +149,27 @@
           \resumeItemNoTitle {Shipped an email campaign launch platform for government clients to reach businesses based on their eligibility for a given aid program, \textbf{used by more than half of our clients}}
           \resumeItemNoTitle {Built tabular React UIs for government clients to analyze aid eligibility for \textbf{over 10,000 businesses}} \resumeItemNoTitle {Developed and maintained UIs to empower struggling businesses to apply to \textbf{more than 130 municipal and federal aid programs} and gain access to \textbf{over \$600,000 in available pandemic relief}}
         \end{itemize}
-        \resumeItemNoTitleTopPadding {\textit{APEX} (Older version of flagship product)}
-        \resumeItemListStart
-          \resumeItemNoTitle {Developed new TypeScript and d3.js chart components that \textbf{increased company chart offerings by 25\%}}
-          \resumeItemNoTitle {Designed and implemented REST APIs in Python and Node to persist chart and app data in PostgreSQL}
-        \end{itemize}
       \resumeListEnd
-      
 
-    \resumeSubheading
-      {Pedal Technologies, Inc. (Data Visualization Consultancy)}{New York, NY}
-      {Technical Co-founder}{Aug. 2017 - Aug. 2019}
-    \resumeItemListStart
-      \resumeItemNoTitle {Oversaw client acquisition, contract oversight, project management, and technical development}
-      \resumeItemNoTitleTopPadding {\textit{Barnard History Data Portal} for Barnard College}
-        \resumeItemListStart
-          \resumeItemNoTitle {Developed a mobile-optimized Flask app that \textbf{enabled students to crowdsource data} at Barnard College}
-          \resumeItemNoTitle {Built UIs, API endpoints, and a MongoDB database to support robust features including \textbf{individual/batch data upload, editing, search, duplicate detection}, and d3.js \textbf{data visualization}}
-          \resumeItemNoTitle {Configured and maintained an Ubuntu VPS to run a Gunicorn HTTP server and NGINX reverse proxy}
-        \end{itemize}
-      \resumeItemNoTitleTopPadding {\textit{MapMaker} for Eurasianet (independent news organization)}
-        \resumeItemListStart
-          \resumeItemNoTitle {Built a cross-platform Python app that \textbf{enabled journalists to produce publication-quality maps} of Eurasia}}
-          \resumeItemNoTitle {Developed a map-generation engine to fetch geocoded data and compile multiple map layers with matplotlib }
-          \resumeItemNoTitle {Used custom Python scripts to pre-render map templates and \textbf{cut map-generation time in half}}
-        \end{itemize}
-      \resumeItemNoTitleTopPadding {Data visualization for One For The World (community-driven non-profit)}
-        \resumeItemListStart
-          \resumeItemNoTitle {Built a Flask data portal to visualize personalized donation data for \textbf{19 charities and hundreds of donors}}
-          \resumeItemNoTitle {Developed an interactive data visualization in d3.js that facilitated donor recruitment and public relations}
-        \resumeListEnd
-    \resumeListEnd
-
-    \resumeSubheading
-      {Two Bulls LLC (Digital Product Consultancy)}{Brooklyn, NY}
-      {Software Engineering Intern}{Summer 2017}
-      \resumeItemListStart
-        \resumeItemNoTitle {Developed Angular.js UIs that \textbf{enabled admin users to update content} on a Verizon citizen engagement kiosk}
-        \resumeItemNoTitle {Built a full-stack app with jQuery and Golang that \textbf{facilitated Android OS troubleshooting} for kiosk technicians}
-      \resumeListEnd
 
   \resumeListEnd
 
 
-%-----------PROJECTS-----------------
-\section{Projects \textit{(for more information, visit \href{https://github.com/TheBatmanofButler}{https://github.com/TheBatmanofButler})}}
+%-----------EDUCATION-----------------
+\section{Education}
   \resumeSubHeadingListStart
-    \resumeItemNoTitle {\textbf{Strudel}: App platform, developer API, and npm component library for building real-time collaboration apps}
-    \resumeItemListStart
-      \resumeItemNoTitle {\textit{Contributions}: RESTful API in Golang, database in PostgreSQL, CRDT real-time collaboration server using yjs and Node, UI using React and Material Design, deployment in Docker containers on a DigitalOcean Ubuntu VPS}
-    \end{itemize}
-  \resumeListEnd
-
+    \resumeSubheadingExtra
+      {Columbia University}{New York, NY}
+      {Bachelor of Arts in Computer Science}{Sept. 2014 -- Feb. 2018}
+    \resumeListEnd
 
 % --------TECHNICAL SKILLS------------
 \section{Technical Skills}
   \resumeSubHeadingListStart
     \resumeSubItem{Proficient}
-      {JavaScript (React, TypeScript, d3.js), Python (Flask, numpy), Golang}
+      {TypeScript/JavaScript (React, Vue, Node), Python (Flask, NumPy), Terraform, MongoDB, AWS (EC2, DynamoDB, S3, EKS, Cloudfront), Linux, GraphQL
     \resumeSubItem{Familiar}
-      {Docker, Redux, SQL, Material Design, MongoDB, Node.js, DigitalOcean, AWS (EC2, DynamoDB, S3, ECS), Linux, C, Java, Angular.js, CI/CD, Mapbox, Gunicorn, NGINX, yjs}
+      {C, C++, Go, Kubernetes, Docker}}
  \resumeListEnd
 
 

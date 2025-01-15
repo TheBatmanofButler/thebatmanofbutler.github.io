@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ganesh Ravichandran</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #003333;
+      /* Deep Teal */
+      color: #FFFFCC;
+      /* Light Yellow */
+      font-family: 'Jersey 25', monospace;
+      font-size: 18px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      padding: 0 10px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+      text-shadow: 0 0 6px rgba(255, 255, 204, 0.6);
+      /* Subtle glow */
+    }
+
+    .subtitle {
+      font-size: 1em;
+      margin-bottom: 20px;
+      font-style: italic;
+      animation: flicker 2s infinite alternate;
+    }
+
+    @keyframes flicker {
+
+      0%,
+      19%,
+      21%,
+      29%,
+      31%,
+      100% {
+        opacity: 1;
+      }
+
+      20%,
+      30% {
+        opacity: 0.4;
+      }
+    }
+
+    a {
+      color: #FFFFCC;
+      /* Light Yellow */
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    a:hover {
+      color: #FFEE99;
+      /* Bright Yellow */
+      text-shadow: 0 0 10px #FFEE99, 0 0 20px #FFEE99;
+    }
+
+    .links {
+      margin: 20px 0;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      gap: 10px;
+      font-size: 1em;
+    }
+
+    .email {
+      margin-top: 20px;
+    }
+
+    .icon {
+      font-size: 1.2em;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .subtitle {
+        font-size: 0.9em;
+      }
+
+      .links a {
+        font-size: 0.9em;
+      }
+
+      .icon {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Ganesh Ravichandran</h1>
+    <p class="subtitle">Former SWE. Budding Security Engineer. Currently exploring adversarial attacks on ML models.</p>
+
+    <div class="links">
+      <a href="https://thebatmanofbutler.substack.com/" target="_blank">
+        <i class="fa-solid fa-book-open"></i> Substack
+      </a>
+      <a href="https://github.com/TheBatmanofButler" target="_blank">
+        <i class="fab fa-github icon"></i> GitHub
+      </a>
+      <a href="https://bsky.app/profile/ganeshravichandran.bsky.social" target="_blank">
+        <i class="fa-brands fa-bluesky"></i> Bluesky
+      </a>
+      <a href="https://www.linkedin.com/in/ganesh-ravichandran-370793a1/" target="_blank">
+        <i class="fab fa-linkedin icon"></i> LinkedIn
+      </a>
+      <a href="/resume-jan-2025.pdf" target="_blank">
+        <i class="fas fa-file-alt icon"></i> Resume
+      </a>
+      <a href="mailto:the.ganesh.ravichandran@gmail.com"><i class="fas fa-envelope icon"></i>
+        the.ganesh.ravichandran@gmail.com</a>
+    </div>
+  </div>
+</body>
+
+</html>
